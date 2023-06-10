@@ -1,0 +1,84 @@
+* {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding 0;
+    border 0;
+    font-family: 'Lora', serif;
+    scroll-behavior: smooth;
+}
+p {
+    font-size: 18px;
+    text-align: justify;
+}
+p-header {
+    font-size: 36px;
+    margin-left: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+img {
+    border-radius: 0.7rem;
+    max-width: 420px;
+}
+.specialImage {
+    border-radius: 0.7rem;
+    max-width: 1000px;
+}
+
+/* Scroll effect */
+.parallax {
+    background: url(images/spirited_away.jpg)
+        center repeat fixed;
+} /* background image */
+.parallax-inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+} /* height of image that is visable */
+.parallax-banner {
+    background: url(images/banner.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+} /* banner image */
+.parallax-inner-banner {
+    padding-top: 63px;
+    padding-bottom: 63px;
+} /* height of image that is visable */
+
+
+/* navigation links at the top of the page */
+nav {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+.nav-links ul li a {
+    background: -webkit-linear-gradient(60deg, #282740, #8C2B45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 12.8px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #BF304A;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
