@@ -1,0 +1,90 @@
+* {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding 0;
+    border 0;
+    font-family: 'Poppins', sans-serif;
+}
+.margin {
+    margin: 50px 0;
+} /* space between background image */
+.rounded-corners {
+    border-radius: 0.7rem;
+}
+
+/* Scroll effect */
+.parallax {
+    background: url(images/banner.png)
+        center repeat fixed;
+} /* background image */
+.parallax-inner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+} /* height of image that is visable */
+.parallax-banner {
+    background: url(images/webassignbanner.png);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+} /* banner image */
+.parallax-inner-banner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+} /* height of image that is visable */
+
+
+h1-pageTitle {
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(60deg, #021F59, #BF8339, #590902);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3-s {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(60deg, #021F59, #BF8339, #590902);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.noUnd {
+    text-decoration: none;
+} /* So that title is not underlined but still links to the home page */
+
+/* navigation links at the top of the page */
+nav {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+.nav-links ul li a {
+    background: -webkit-linear-gradient(60deg, #021F59, #8C1C03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-size: 12.8px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #BF8339;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
